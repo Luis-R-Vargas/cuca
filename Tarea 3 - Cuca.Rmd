@@ -1,0 +1,49 @@
+---
+title: "Tarea 3"
+author: "Cuca"
+date: "`r format(Sys.time(), '%B %d, %Y | %H:%M:%S | %Z')`"
+output:
+  pdf_document:
+    toc: no
+  html_document:
+    code_folding: show
+    df_print: paged
+    highlight: tango
+    number_sections: no
+    theme: cosmo
+    toc: no
+---
+
+<style>
+div.answer {background-color:#f3f0ff; border-radius: 5px; padding: 20px;}
+</style>
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      eval = TRUE,
+                      error = FALSE,
+                      message = FALSE,
+                      warning = FALSE,
+                      comment = NA)
+```
+
+<!-- Do not forget to input your Github username in the YAML configuration up there --> 
+
+***
+
+```{r, include = T}
+library(report)
+library(sjPlot)
+library(haven)
+library(tidyverse)
+library(modelsummary)
+library(kableExtra)
+library(DT)
+library(leaflet)
+library(plotly)
+```
+
+<br>
+
+***
+
