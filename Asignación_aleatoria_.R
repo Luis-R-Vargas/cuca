@@ -2,7 +2,7 @@
 ###### Código por: Luis Roberto Vargas Pineda y Jessica Daniela Monroy #######
 
 library(haven)
-base <- read_dta("C:/Users/danmo/Downloads/Asignación aleatoria.dta")
+base <- read_dta("./Asignación aleatoria.dta")
 View(base)
 
 # Cargamos las librerías necesarias
@@ -135,7 +135,7 @@ ggplot(datos_mun, aes(x = asignacion, y = porc_pnacoe)) +
 
 ########## 8. Pruebas de balance para las diez observables poblacionales y de vivienda usando stargazer #########
 
-# Asegúrate de haber instalado y cargado el paquete stargazer ###
+# Paquete stargazer ###
 
 install.packages("stargazer")
 library(stargazer)
